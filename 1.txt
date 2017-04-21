@@ -1,1 +1,2 @@
-This is my first file to test th name for the wuzu repository
+This is my first file to test the name for the wuzu repository.
+enhen,it`s cool.

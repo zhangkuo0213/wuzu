@@ -1,0 +1,2 @@
+# wuzu
+The first repository 

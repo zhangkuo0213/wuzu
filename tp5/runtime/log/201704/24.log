@@ -1969,3 +1969,1157 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2017-04-24T20:22:27+08:00 ] 172.17.162.12 221.221.161.245 GET /wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png [运行时间：0.030417s][吞吐率：32.88req/s] [内存消耗：1,714.69kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'cookie' => 'Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948911,1493017865; PHPSESSID=mvnibomc6jputv40khe3s7dcu6; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493031404',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/images/c4b6f429ea6272c39fb395400ddba55a_png' => '',
+  'tp5' => 'public',
+  'images' => 'c4b6f429ea6272c39fb395400ddba55a.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:22:41+08:00 ] 172.17.162.12 114.249.238.127 GET /wx/wuzu/wuzu/tp5/public/index.php/home/index/index
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/index [运行时间：0.510010s][吞吐率：1.96req/s] [内存消耗：3,163.66kb] [文件加载：50]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036595',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ /alidata/www/wx/wuzu/wuzu/tp5/application/home/controller/Index.php 6 - 38
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /alidata/www/wx/wuzu/wuzu/tp5/public/../application/home/view/index/index.html [ array (
+  0 => 'lun',
+  1 => 'hunyan',
+  2 => 'hunsha',
+  3 => 'miyue',
+  4 => 'hunce',
+  5 => 'hunyans',
+  6 => 'hunshas',
+  7 => 'miyues',
+  8 => 'hunces',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.072025s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.013618s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  (  is_show=1 ) ORDER BY carousel_id  [ RunTime:0.012809s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020817s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel` [ RunTime:0.014603s ]
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,3   [ RunTime:0.014627s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022144s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ph_business` [ RunTime:0.015410s ]
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,3   [ RunTime:0.014586s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021215s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wedding_miyue` [ RunTime:0.015413s ]
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,3   [ RunTime:0.014256s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023716s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car` [ RunTime:0.016899s ]
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.015748s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020576s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,10   [ RunTime:0.014204s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019748s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,10   [ RunTime:0.032260s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021733s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,10   [ RunTime:0.013043s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023570s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_salary`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.016223s ]
+
+---------------------------------------------------------------
+[ 2017-04-24T20:22:48+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png [运行时间：0.022870s][吞吐率：43.73req/s] [内存消耗：1,715.50kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036595',
+)
+[ info ] [ PARAM ] array (
+  '/images/1c58d343375cb934c75eee3c08b533c7_png' => '',
+  'tp5' => 'public',
+  'images' => '1c58d343375cb934c75eee3c08b533c7.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:22:51+08:00 ] 172.17.162.12 221.221.161.245 GET /wx/wuzu/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png [运行时间：0.027179s][吞吐率：36.79req/s] [内存消耗：1,715.50kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036595',
+)
+[ info ] [ PARAM ] array (
+  '/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35_png' => '',
+  'tp5' => 'public',
+  'images' => 'b1b5330ac05eb6d9cfd0a4fbf94b9f35.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:23:02+08:00 ] 172.17.162.12 221.221.161.245 GET /wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png [运行时间：0.021306s][吞吐率：46.94req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036613',
+)
+[ info ] [ PARAM ] array (
+  '/images/c4b6f429ea6272c39fb395400ddba55a_png' => '',
+  'tp5' => 'public',
+  'images' => 'c4b6f429ea6272c39fb395400ddba55a.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:23:02+08:00 ] 172.17.162.12 221.221.161.245 GET /wx/wuzu/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif [运行时间：0.021430s][吞吐率：46.66req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036613',
+)
+[ info ] [ PARAM ] array (
+  '/images/3da56b06895ac969ee4aab7ff059f590_gif' => '',
+  'tp5' => 'public',
+  'images' => '3da56b06895ac969ee4aab7ff059f590.gif',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:24:09+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/index.php/home/index/index
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/index [运行时间：0.420920s][吞吐率：2.38req/s] [内存消耗：3,381.34kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036613',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ /alidata/www/wx/wuzu/wuzu/tp5/application/home/controller/Index.php 6 - 38
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /alidata/www/wx/wuzu/wuzu/tp5/public/../application/home/view/index/index.html [ array (
+  0 => 'lun',
+  1 => 'hunyan',
+  2 => 'hunsha',
+  3 => 'miyue',
+  4 => 'hunce',
+  5 => 'hunyans',
+  6 => 'hunshas',
+  7 => 'miyues',
+  8 => 'hunces',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019606s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.013834s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  (  is_show=1 ) ORDER BY carousel_id  [ RunTime:0.012985s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019504s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel` [ RunTime:0.014197s ]
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,3   [ RunTime:0.012876s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019538s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ph_business` [ RunTime:0.013890s ]
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,3   [ RunTime:0.013285s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018738s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wedding_miyue` [ RunTime:0.013720s ]
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,3   [ RunTime:0.012500s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018255s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car` [ RunTime:0.013149s ]
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.012233s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021193s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,10   [ RunTime:0.014275s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020999s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,10   [ RunTime:0.014345s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022423s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,10   [ RunTime:0.015907s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023252s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_salary`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.016041s ]
+
+---------------------------------------------------------------
+[ 2017-04-24T20:24:11+08:00 ] 172.17.162.12 221.221.158.67 GET /wx/wuzu/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png [运行时间：0.022974s][吞吐率：43.53req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036613',
+)
+[ info ] [ PARAM ] array (
+  '/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35_png' => '',
+  'tp5' => 'public',
+  'images' => 'b1b5330ac05eb6d9cfd0a4fbf94b9f35.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:24:18+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png [运行时间：0.022087s][吞吐率：45.28req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036613',
+)
+[ info ] [ PARAM ] array (
+  '/images/1c58d343375cb934c75eee3c08b533c7_png' => '',
+  'tp5' => 'public',
+  'images' => '1c58d343375cb934c75eee3c08b533c7.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:24:22+08:00 ] 172.17.162.12 114.249.238.127 GET /wx/wuzu/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif [运行时间：0.031842s][吞吐率：31.41req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036613',
+)
+[ info ] [ PARAM ] array (
+  '/images/3da56b06895ac969ee4aab7ff059f590_gif' => '',
+  'tp5' => 'public',
+  'images' => '3da56b06895ac969ee4aab7ff059f590.gif',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:24:22+08:00 ] 172.17.162.12 114.249.238.127 GET /wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png [运行时间：0.021985s][吞吐率：45.49req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036701',
+)
+[ info ] [ PARAM ] array (
+  '/images/c4b6f429ea6272c39fb395400ddba55a_png' => '',
+  'tp5' => 'public',
+  'images' => 'c4b6f429ea6272c39fb395400ddba55a.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:26:19+08:00 ] 172.17.162.12 221.221.161.245 GET /wx/wuzu/wuzu/tp5/public/index.php/home/index/index
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/index [运行时间：0.445077s][吞吐率：2.25req/s] [内存消耗：3,381.53kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036701',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ /alidata/www/wx/wuzu/wuzu/tp5/application/home/controller/Index.php 6 - 38
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /alidata/www/wx/wuzu/wuzu/tp5/public/../application/home/view/index/index.html [ array (
+  0 => 'lun',
+  1 => 'hunyan',
+  2 => 'hunsha',
+  3 => 'miyue',
+  4 => 'hunce',
+  5 => 'hunyans',
+  6 => 'hunshas',
+  7 => 'miyues',
+  8 => 'hunces',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023153s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.016288s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  (  is_show=1 ) ORDER BY carousel_id  [ RunTime:0.015478s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019653s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel` [ RunTime:0.014200s ]
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,3   [ RunTime:0.013114s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018587s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ph_business` [ RunTime:0.013867s ]
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,3   [ RunTime:0.012302s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021631s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wedding_miyue` [ RunTime:0.015036s ]
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,3   [ RunTime:0.014054s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023322s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car` [ RunTime:0.016434s ]
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.015403s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022254s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,10   [ RunTime:0.014849s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020944s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,10   [ RunTime:0.014248s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024205s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,10   [ RunTime:0.016203s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021277s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_salary`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.014260s ]
+
+---------------------------------------------------------------
+[ 2017-04-24T20:26:19+08:00 ] 172.17.162.12 221.221.158.67 GET /wx/wuzu/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png [运行时间：0.021457s][吞吐率：46.60req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036701',
+)
+[ info ] [ PARAM ] array (
+  '/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35_png' => '',
+  'tp5' => 'public',
+  'images' => 'b1b5330ac05eb6d9cfd0a4fbf94b9f35.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:26:27+08:00 ] 172.17.162.12 221.221.158.67 GET /wx/wuzu/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png [运行时间：0.025453s][吞吐率：39.29req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036701',
+)
+[ info ] [ PARAM ] array (
+  '/images/1c58d343375cb934c75eee3c08b533c7_png' => '',
+  'tp5' => 'public',
+  'images' => '1c58d343375cb934c75eee3c08b533c7.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:26:28+08:00 ] 172.17.162.12 221.221.161.245 GET /wx/wuzu/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif [运行时间：0.023708s][吞吐率：42.18req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036701',
+)
+[ info ] [ PARAM ] array (
+  '/images/3da56b06895ac969ee4aab7ff059f590_gif' => '',
+  'tp5' => 'public',
+  'images' => '3da56b06895ac969ee4aab7ff059f590.gif',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:26:37+08:00 ] 172.17.162.12 221.221.158.67 GET /wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png [运行时间：0.023324s][吞吐率：42.87req/s] [内存消耗：1,714.57kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036837',
+)
+[ info ] [ PARAM ] array (
+  '/images/c4b6f429ea6272c39fb395400ddba55a_png' => '',
+  'tp5' => 'public',
+  'images' => 'c4b6f429ea6272c39fb395400ddba55a.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:04+08:00 ] 172.17.162.12 221.221.158.67 GET /wx/wuzu/wuzu/tp5/public/index.php/home/index/index
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/index [运行时间：0.474219s][吞吐率：2.11req/s] [内存消耗：3,381.66kb] [文件加载：52]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036837',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ /alidata/www/wx/wuzu/wuzu/tp5/application/home/controller/Index.php 6 - 38
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /alidata/www/wx/wuzu/wuzu/tp5/public/../application/home/view/index/index.html [ array (
+  0 => 'lun',
+  1 => 'hunyan',
+  2 => 'hunsha',
+  3 => 'miyue',
+  4 => 'hunce',
+  5 => 'hunyans',
+  6 => 'hunshas',
+  7 => 'miyues',
+  8 => 'hunces',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024229s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.017133s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  (  is_show=1 ) ORDER BY carousel_id  [ RunTime:0.016688s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024477s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel` [ RunTime:0.016558s ]
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,3   [ RunTime:0.015870s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024333s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ph_business` [ RunTime:0.017068s ]
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,3   [ RunTime:0.016346s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024434s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wedding_miyue` [ RunTime:0.017451s ]
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,3   [ RunTime:0.016404s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018741s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car` [ RunTime:0.014030s ]
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.012678s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021877s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,10   [ RunTime:0.014931s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019380s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,10   [ RunTime:0.013026s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024665s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,10   [ RunTime:0.016251s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024142s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_salary`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.016894s ]
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:04+08:00 ] 172.17.162.12 221.221.158.67 GET /wx/wuzu/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png [运行时间：0.021294s][吞吐率：46.96req/s] [内存消耗：1,714.23kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036837',
+)
+[ info ] [ PARAM ] array (
+  '/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35_png' => '',
+  'tp5' => 'public',
+  'images' => 'b1b5330ac05eb6d9cfd0a4fbf94b9f35.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:04+08:00 ] 172.17.162.12 114.249.238.127 GET /wx/wuzu/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png [运行时间：0.023633s][吞吐率：42.31req/s] [内存消耗：1,714.23kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036837',
+)
+[ info ] [ PARAM ] array (
+  '/images/1c58d343375cb934c75eee3c08b533c7_png' => '',
+  'tp5' => 'public',
+  'images' => '1c58d343375cb934c75eee3c08b533c7.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:04+08:00 ] 172.17.162.12 114.249.238.127 GET /wx/wuzu/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif [运行时间：0.021714s][吞吐率：46.05req/s] [内存消耗：1,714.23kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036837',
+)
+[ info ] [ PARAM ] array (
+  '/images/3da56b06895ac969ee4aab7ff059f590_gif' => '',
+  'tp5' => 'public',
+  'images' => '3da56b06895ac969ee4aab7ff059f590.gif',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:04+08:00 ] 172.17.162.12 114.249.238.127 GET /wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/c4b6f429ea6272c39fb395400ddba55a.png [运行时间：0.021608s][吞吐率：46.28req/s] [内存消耗：1,714.23kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036864',
+)
+[ info ] [ PARAM ] array (
+  '/images/c4b6f429ea6272c39fb395400ddba55a_png' => '',
+  'tp5' => 'public',
+  'images' => 'c4b6f429ea6272c39fb395400ddba55a.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:29+08:00 ] 172.17.162.12 114.249.238.127 GET /wx/wuzu/wuzu/tp5/public/index.php/home/index/bj/HunChe/Info-275
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/bj/HunChe/Info-275 [运行时间：0.031728s][吞吐率：31.52req/s] [内存消耗：2,081.48kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'bj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036864',
+)
+[ info ] [ PARAM ] array (
+  'HunChe' => 'Info-275',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:34+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/index.php/home/car/index.html
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/car/index.html [运行时间：0.170351s][吞吐率：5.87req/s] [内存消耗：2,871.97kb] [文件加载：49]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'car',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/index',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036891',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ /alidata/www/wx/wuzu/wuzu/tp5/application/home/controller/Car.php 6 - 17
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /alidata/www/wx/wuzu/wuzu/tp5/public/../application/home/view/car/car_list.html [ array (
+  0 => 'arr',
+  1 => 'trr',
+  2 => 'brr',
+  3 => 'crr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020204s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car` [ RunTime:0.014575s ]
+[ sql ] [ SQL ] SELECT * FROM `car` INNER JOIN car_type ON car.car_type_id = car_type.car_type_id INNER JOIN car_brand ON car.car_brand_id=car_brand.car_brand_id INNER JOIN car_color ON car.car_color_id = car_color.car_color_id   [ RunTime:0.014398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car_brand` [ RunTime:0.014476s ]
+[ sql ] [ SQL ] SELECT * FROM `car_brand`  [ RunTime:0.013700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car_type` [ RunTime:0.014677s ]
+[ sql ] [ SQL ] SELECT * FROM `car_type`  [ RunTime:0.013835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car_color` [ RunTime:0.014588s ]
+[ sql ] [ SQL ] SELECT * FROM `car_color`  [ RunTime:0.013636s ]
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:38+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/images/hytip.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/hytip.png [运行时间：0.105169s][吞吐率：9.51req/s] [内存消耗：1,713.71kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/ccdc7afb51094e12bddb103764f09f9b.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036898',
+)
+[ info ] [ PARAM ] array (
+  '/images/hytip_png' => '',
+  'tp5' => 'public',
+  'images' => 'hytip.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:38+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/images/fire.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/fire.png [运行时间：0.110099s][吞吐率：9.08req/s] [内存消耗：1,713.67kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/ccdc7afb51094e12bddb103764f09f9b.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036898',
+)
+[ info ] [ PARAM ] array (
+  '/images/fire_png' => '',
+  'tp5' => 'public',
+  'images' => 'fire.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:38+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/images/top.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/top.png [运行时间：0.111234s][吞吐率：8.99req/s] [内存消耗：1,713.71kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/ccdc7afb51094e12bddb103764f09f9b.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036898',
+)
+[ info ] [ PARAM ] array (
+  '/images/top_png' => '',
+  'tp5' => 'public',
+  'images' => 'top.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:38+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/images/noicon.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/noicon.png [运行时间：0.115649s][吞吐率：8.65req/s] [内存消耗：1,713.77kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/ccdc7afb51094e12bddb103764f09f9b.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036898',
+)
+[ info ] [ PARAM ] array (
+  '/images/noicon_png' => '',
+  'tp5' => 'public',
+  'images' => 'noicon.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:38+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/images/arrow-down-up.png
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/images/arrow-down-up.png [运行时间：0.119606s][吞吐率：8.36req/s] [内存消耗：1,713.77kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'wx',
+    1 => 'wuzu',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/css/ccdc7afb51094e12bddb103764f09f9b.css',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036898',
+)
+[ info ] [ PARAM ] array (
+  '/images/arrow-down-up_png' => '',
+  'tp5' => 'public',
+  'images' => 'arrow-down-up.png',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:39+08:00 ] 172.17.162.12 180.153.206.24 GET /wx/wuzu/wuzu/tp5/public/index.php/home/index/bj/HunChe/Info-275
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/bj/HunChe/Info-275 [运行时间：0.030464s][吞吐率：32.83req/s] [内存消耗：2,081.67kb] [文件加载：45]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'bj',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:50.0) Gecko/20100101 Firefox/50.0',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/index/index',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'HunChe' => 'Info-275',
+)
+[ info ] [ LANG ] /alidata/www/wx/wuzu/wuzu/tp5/framework/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:41+08:00 ] 172.17.162.12 222.128.181.148 GET /wx/wuzu/wuzu/tp5/public/index.php/home/car/xq.html?id=4
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/car/xq.html?id=4 [运行时间：0.025683s][吞吐率：38.94req/s] [内存消耗：2,497.41kb] [文件加载：43]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'car',
+    2 => 'xq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/car/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'think_var=zh-cn; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492948472,1493001801; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493036898',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] Method [ <user> public method xq ] {
+  @@ /alidata/www/wx/wuzu/wuzu/tp5/application/home/controller/Car.php 18 - 21
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-04-24T20:27:51+08:00 ] 172.17.162.12 180.153.205.254 GET /wx/wuzu/wuzu/tp5/public/index.php/home/car/xq.html?id=4
+[ log ] 101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/car/xq.html?id=4 [运行时间：0.025732s][吞吐率：38.86req/s] [内存消耗：2,496.84kb] [文件加载：43]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'car',
+    2 => 'xq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) 			Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://101.201.66.144/wx/wuzu/wuzu/tp5/public/index.php/home/car/index.html',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => '101.201.66.144',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  'id' => '4',
+)
+[ info ] [ RUN ] Method [ <user> public method xq ] {
+  @@ /alidata/www/wx/wuzu/wuzu/tp5/application/home/controller/Car.php 18 - 21
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

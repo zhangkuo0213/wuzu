@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"/alidata/www/wx/wuzu/wuzu/tp5/public/../application/home/view/index/index.html";i:1493013819;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:78:"/alidata/www/wx/wuzu/wuzu/tp5/public/../application/home/view/index/index.html";i:1493036816;}*/ ?>
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
@@ -202,13 +202,11 @@
 		<?php foreach($miyue as $k => $v){?>
 		<li>
 			<a href="__PUBLIC__/index.php/home/MiYue/miyue_info?id=<?php echo $v['miyue_id']; ?>">
-				<div ><img src="<?php echo $v['url'];?>" width="280px" height="100px"></div>
+				<div ><img src="<?php echo $v['url'];?>" width="100px" height="100px"></div>
 				<p><?php echo $v['address'];?></p>
 			</a>
 		</li>
 		<?php }?>
-
-
 	</ul>
 </section>
 
@@ -218,27 +216,14 @@
 <section class="hunChe pubItem itemType">
 	<h3 class="tit">婚车<a href="http://m.daoxila.com/bj/HunChe/Class-Car">查看所有</a></h3>
 	<ul class="clearfix">
-
-
-		<li>
-			<a href="bj/HunYan/MeiGuiLiTaiYang-Info">
-				<div ></div>
-				<p></p>
-			</a>
-		</li>
-
 		<?php foreach($hunce as $k => $v){?>
 		<li>
 			<a href="bj/HunChe/Info-275">
-				<div><img src="__PUBLIC__/img/user/<?php echo $v['car_img'];?>"></div>
+				<div><img src="__PUBLIC__/img/user/<?php echo $v['car_img'];?>"  width="100px" height="100px"></div>
 				<p><?php echo $v['car_name'];?></p>
 			</a>
 		</li>
 		<?php }?>
-
-
-
-
 	</ul>
 </section>
 

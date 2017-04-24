@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>婚庆后台</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/css.css" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+</head>
+<body>
+<div id="pageAll">
+    <div class="pageTop">
+        <div class="page">
+            <img src="__PUBLIC__/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+                href="#">轮播管理</a>&nbsp;-</span>&nbsp;轮播图添加
+        </div>
+    </div>
+    <div class="page ">
+        <!-- 上传广告页面样式 -->
+        <div class="banneradd bor">
+            <div class="baTop">
+                <span>轮播图添加</span>
+            </div>
+            <div class="baBody">
+                <form action="{:url('carousel/carousel_add')}" method="post" enctype="multipart/form-data">
+                <div class="bbD">
+                    轮播图片：&nbsp;&nbsp;&nbsp;&nbsp;<input type="file" name="carousel_img" />
+                </div>
+                <div class="bbD">
+                    轮播链接：<input type="text" name="carousel_url" class="input1" />
+                </div>
+                <div class="bbD">
+                    是否展示：&nbsp;&nbsp;
+                    <input type="radio" name="is_show" value="1"  />是&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="is_show" value="2"  />否
+                </div>
+                <div class="bbD">
+                    轮播排序：<input type="text" name="carousel_sort" class="input1" />
+                </div>
+
+
+                <div class="bbD">
+                    <p class="bbDP">
+                        <button class="btn_ok btn_yes" type="submit">添加</button>
+                        <a class="btn_ok btn_no"  type="reset">取消</a>
+                    </p>
+                </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 上传广告页面样式end -->
+    </div>
+</div>
+</body>
+</html>

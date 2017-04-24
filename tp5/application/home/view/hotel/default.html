@@ -1,0 +1,359 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{$list[0]['hotel_name']}</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="SW,北京婚宴酒店预订知名品牌，提供多样婚宴预订、实时的喜宴预订、促销活动等信息，即刻预订婚宴就赠超值大礼。订婚宴,就选SW！" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-touch-fullscreen" content="yes"/>
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="apple-touch-icon" href="__PUBLIC__/img/user/{$list[0]['hotel_img1']}"/>
+    <link href="__PUBLIC__/css/9578d48780384506bbf375dc7b8f88b6.css" rel="stylesheet" type="text/css"/>
+    <script src="__PUBLIC__/js/47315f838db642748a2273e8606bf1a2.js"></script>
+</head>
+
+<body>
+<header>
+    <a class="prev"></a>
+    <div class="riIcon clearfix">
+        <a class="collect notCollect" data-collect="0" data-id="5285"></a>
+        <a href="#" class="screen"></a>
+    </div>
+</header>
+<!-- header end -->
+
+<section id="topImg">
+    <div class="TopImgBox">
+        <img src="__PUBLIC__/img/user/{$list[0]['hotel_img1']}">
+    </div>
+    <?php foreach($list as $k=>$v){ ?>
+    <div class="topInfos">
+        <h1>{$v.hotel_name}</h1>
+        <div class="pinglun">
+            <span class="le"><i style="width:80%;"></i></span>
+            <span class="ri">{$v.evaluation_number}条评论</span>
+        </div>
+        <div class="pirce">
+            <span class="le">￥2880-5580/桌</span>
+        </div>
+    </div>
+    <?php }?>
+</section>
+<!-- 头图/酒店名/价格 end -->
+
+
+
+<section id="map" class="items">
+    <ul>
+        <li><a href="//m.daoxila.com/bj/HunYan/DuoLanHuiMei-Map"><span>{$v.hotel_address}</span><span class="shopBusy">【商家繁忙，请提前预约】</span></a></li>
+        <li class="checkInfoDialog">酒店详情介绍 </li>
+        <li><a href="tel:{$v.hotel_phone}">{$v.hotel_phone}<i>联系商家</i></a></li>
+
+    </ul>
+</section>
+<!-- 地图 end -->
+
+<!-- 宴会厅 end -->
+
+<section id="menus" class="items">
+    <h3 class="tit">婚宴菜单</h3>
+    <ul>
+        <?php foreach($arr as $k=>$v){ ?>
+        <li><a href="__PUBLIC__/index.php/home/hotel/hotel_package?pid={$v.id}">{$v.package_name}<span>¥{$v.package_price}/桌</span></a></li>
+        <?php }?>
+    </ul>
+
+    <div class="more"><a href="__PUBLIC__/index.php/home/hotel/hotel_package?hotel_id={$arr['hotel_id']}">查看全部{$arr['number']}个菜单</a></div>
+
+</section>
+<!-- 婚宴菜单 end -->
+
+<section id="pingLun" class="items">
+    <h3 class="tit">评论</h3>
+    <ul>
+        <li>
+            <a href="//m.daoxila.com/bj/HunYan/DuoLanHuiMei-Review">
+                <img src="__PUBLIC__/picture/defaultgirl46.jpg" class="le">
+                <div class="ri">
+                    <h3>宋女士	<p class="star"><span class="s2" style="width:100%;"></span></p></h3>
+                    <div>同事结婚办在这里的，菜很精致，服务也不错</div>
+                    <dl class="clearfix">
+
+                    </dl>
+                </div>
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="more"><a href="//m.daoxila.com/bj/HunYan/DuoLanHuiMei-Review">查看全部9条评价</a></div>
+
+</section>
+<!-- 评论 end -->
+
+<section id="mayEnjoy" class="items">
+    <h3 class="tit">您可能会喜欢</h3>
+    <ul>
+
+
+        <li>
+            <a href="//m.daoxila.com/bj/HunYan/HuiShangGuLi-Info">
+
+                <img class="sellTXLe" src="__PUBLIC__/picture/20161109180567775.jpg" >
+
+                <div class="sellTXRi">
+                    <h3>
+                        <span>徽商故里</span>
+                        <i class="li"></i>
+
+
+                    </h3>
+                    <div class="price">
+                        <span class="ri">桌数：18</span>
+                        <p class="le">￥2088 -￥3688</p>
+                    </div>
+                    <div class="info">
+                        <span class="le">特色餐厅</span>
+									<span class="ri">
+										<i>东城区</i>
+									</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+
+
+        <li>
+            <a href="//m.daoxila.com/bj/HunYan/BaoChen-Info">
+
+                <img class="sellTXLe" src="__PUBLIC__/picture/20161010134448065.jpg" >
+
+                <div class="sellTXRi">
+                    <h3>
+                        <span>宝辰饭店</span>
+                        <i class="li"></i>
+
+
+                    </h3>
+                    <div class="price">
+                        <span class="ri">桌数：22</span>
+                        <p class="le">￥3699 -￥4299</p>
+                    </div>
+                    <div class="info">
+                        <span class="le">星级酒店</span>
+									<span class="ri">
+										<i>东城区</i>
+									</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+
+
+
+    </ul>
+</section>
+<!-- 您可能会喜欢 end -->
+
+<aside id="tooBar">
+    <ul>
+        <li class="online"><i>在线咨询</i></li>
+        <li class="contact">
+
+            <a href="tel:4006553179 分机号 15285">
+                <i>联系商家</i>
+            </a>
+
+        </li>
+        <li class="dangqi dqBtn">查询档期</li>
+        <li class="yuyue">预约看店</li>
+    </ul>
+</aside>
+<!-- 底部工具条 end -->
+
+<section id="huiDialog">
+    <div class="dialogWrap">
+        <h3 class="diaH3Tit"><span></span>优惠详情</h3>
+        <div class="info">
+
+
+
+            <div class="dingDanLi infoItem" liTag="d2">
+                <h3>通过到喜啦预约婚宴,即获得结婚大礼包！</h3>
+                <div>
+
+                    <p>送价值300元love系列婚宴请柬</p>
+
+                    <p>满1万元及以上赠送1套精美床上四件套</p>
+
+                    <p>精品红酒 婚宴消费1万元以上赠送1箱</p>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="order clearfix">
+            <input type="tel" placeholder="输入您的手机号码" maxlength="11">
+            <span class="toOrder">领取优惠</span>
+        </div>
+    </div>
+</section>
+<!-- 优惠详情弹层 end -->
+
+<section id="infoDialog">
+    <div class="dialogWrap">
+        <h3 class="diaH3Tit"><span></span>酒店简介</h3>
+        <div class="info">
+            <div class="jianjie infoItem">
+                <h3>酒店简介</h3>
+                <div class="jianjieCon">
+                    <div>多兰汇美位于北京市东城区东四十条桥西北角，毗邻港澳中心、保利大厦、东兴楼、燕兰楼夹仓道 ，周围交通便利，地铁2号线可到达，酒店还精心为您提供了停车位，为您的婚宴保证了便利的出行选择。是朋友聚会、家庭聚餐、举行婚宴、寿宴的好去处。
+                        多兰汇美营业面积约600平方米，5米无柱宴会大厅，华丽的店内装潢，专业的婚礼服务，周到的服务，温馨的环境，都能让您有宾至如归的感觉。一流的硬件设施，一流的待客服务，一流的优雅环境。多兰汇美给您提供一场完美的婚宴。
+                        多兰汇美是一家高级餐厅，食材新鲜，菜肴美味，价钱实惠，性价比超高，档期充足，热情周到的服务将为你消除一天的疲惫尽情享受休闲的快乐！我们以崭新的服务理念，为到本店消费的客人提供优质的宴会服务。在此热忱恭迎我们贵宾的到来！</div>
+                </div>
+            </div>
+            <div class="tese infoItem">
+                <h3>特色服务</h3>
+                <div class="serviceItem">
+
+                    <p>服务费：</p>
+
+
+                    <p>停车位：免费提供婚礼当天车辆停车位</p>
+
+
+
+                    <p>草坪：</p>
+
+
+                    <p>婚房：</p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- 酒店详情 end -->
+
+<section id="yuyueOrder">
+    <div class="yy_1">
+        <h3>到喜啦独家优惠，预约即可领取</h3>
+        <ul>
+
+
+
+            <li><i>[订单礼]</i>下单立享结婚大礼包</li>
+
+
+        </ul>
+        <div class="closeY"></div>
+    </div>
+    <div class="yy_2">
+        <h3>留下您的联系方式，我们会尽快联系您</h3>
+        <p class="clearfix">
+            <input type="tel" class="mobile" maxlength="11" placeholder="请输入手机号码，预约即可领取">
+            <span class="toOrder">提交</span>
+        </p>
+    </div>
+</section>
+<!-- 预约看店 end -->
+
+<section id="yhtDialog">
+    <div class="yhtDiaCon">
+        <div class="top"></div>
+        <div id="yhtDomList">
+            <ul>
+
+                <li class="yhtDom">
+
+                    <div class="photoDiv">
+                        <img src="__PUBLIC__/picture/20130712113429.jpg">
+                    </div>
+
+                    <div class="yhtInfo">
+                        <div class="yhtTitle clearfix">
+                            <h4>大厅 5F</h4>
+                            <p class="num"><span>1</span>/2</p>
+                        </div>
+                        <div class="yhtData">
+                            <p>
+                                <span>最佳桌数：40桌</span>
+
+
+                                <span>层高：3.5m</span>
+
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="yhtDom">
+
+                    <div class="photoDiv">
+                        <img src="__PUBLIC__/picture/20130712113623.jpg">
+
+                    </div>
+
+                    <div class="yhtInfo">
+                        <div class="yhtTitle clearfix">
+                            <h4>宴会厅 3F</h4>
+                            <p class="num"><span>2</span>/2</p>
+                        </div>
+                        <div class="yhtData">
+                            <p>
+                                <span>最佳桌数：35桌</span>
+
+                                <span>面积：600m</span>
+
+                                <span>层高：5m</span>
+
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="bottom">
+            <input type="tel" class="phoneNum" placeholder="请输入11位手机号" maxlength="11">
+            <div class="sure">查询档期</div>
+        </div>
+    </div>
+</section>
+<!-- 宴会厅图片弹层 end -->
+
+<section id="onLineDialog">
+    <span class="toLine">在线客服实时解答</span>
+    <span class="noLine">取消</span>
+</section>
+<!-- 在线咨询弹层 end -->
+
+<section id="dqDialog">
+    <div class="dqDiaCon">
+        <h3 class="diaH3Tit"><span></span>查询档期</h3>
+        <div class="dqDiaInfo">
+            <p class="dqNames">查询宴会厅：<span>摩洛哥厅</span></p>
+            <p class="dqTips">输入您想查询的档期及手机号码，我们会为您<br>提供实时档期信息</p>
+            <div class="dqCale">
+                <p class="dqCaleDate"></p>
+            </div>
+            <div class="dqMobile">
+                <input type="tel" class="mobileIn" placeholder="请输入手机号码" maxlength="11">
+                <span class="clearMobile"></span>
+            </div>
+            <div class="submit">提交</div>
+        </div>
+    </div>
+</section>
+<!-- 档期查询弹层 end -->
+
+</body>
+</html>

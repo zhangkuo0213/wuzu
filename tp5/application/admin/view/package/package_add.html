@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>添加用户-有点</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/css.css" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="pageAll">
+		<div class="pageTop">
+			<div class="page">
+				<img src="__PUBLIC__/img/coin02.png" /><span><a href="#">首页</a>&nbsp;-&nbsp;<a
+					href="#">婚宴</a>&nbsp;-</span>&nbsp;酒店
+			</div>
+		</div>
+		<div class="page ">
+			<!-- 会员注册页面样式 -->
+            <form action="__PUBLIC__/index.php/admin/package/package_add_do?hotel_id=<?php echo $list['hotel_id']?>" method="post" enctype="multipart/form-data">
+			<div class="banneradd bor">
+				<div class="baBody">
+					<div class="bbD">
+						&nbsp;&nbsp;&nbsp;婚宴菜单名：
+                        <input type="hidden" name="hotel_id" value="<?php echo $list['hotel_id']?>"/>
+                        <input type="text" class="input3" name="package_name"/>
+					</div>
+					<div class="bbD">
+                        菜单价格：<input type="text" class="input3" name="package_price" />
+					</div>
+					<div class="bbD">
+                        菜单内容：<textarea name="package_content" rows="8" cols="50"></textarea>
+					</div>
+						<p class="bbDP">
+							<input type="submit" value="提交" class="btn_ok btn_no" >
+						</p>
+					</div>
+				</div>
+            </form>
+        </div>
+			<!-- 会员注册页面样式end -->
+		</div>
+	</div>
+</body>
+</html>

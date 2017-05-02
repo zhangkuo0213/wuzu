@@ -1,0 +1,84 @@
+﻿/************************婚庆列表********************/
+body{background:#f0f0f0}
+header{ position:relative;height:34px}
+header .title{ padding-top: 4px;}
+header .title a{display:inline-block;width:76px;height:26px;line-height:26px;color:#ff608e;border:1px solid #ff608e;font-size: 15px;}
+header .title a.selected{color: #fff;background: #ff608e;border: 1px solid #ff608e;}
+header .title a:first-child{border-radius:5px 0 0 5px}
+header .title a:last-child{border-radius:0 5px 5px 0}
+header .prev {top:2px;}
+
+/* 排序 */
+#hunSort{ width:100%; background:#fff; line-height:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:relative;}
+#hunSort .sortNav{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1; text-align:center; border-bottom:1px solid #d8d8d8; font-size:14px;
+line-height:42px;}
+#hunSort .sortNav .selectShow{position: relative;}
+#hunSort .sortNav .selectShow:after{position:absolute; right:0; top:10px; content:""; width:1px; height:20px; background:#e5e5e5;}
+#hunSort .sortNav span{font-size:14px; position:relative;color:#666; display: block;}
+#hunSort .selectShow span:after{ position:absolute; top:18px; right:10px; width:10px; height:5px;background:url(../images/greydown.png) no-repeat center center; background-size:10px auto; content:"";-ms-transform:rotate(0deg);transform:rotate(0deg); -webkit-transform:rotate(0deg);}
+#hunSort .sortNav span.cur{ color:#ff608e;}
+#hunSort .sortNav span.cur:after{-ms-transform:rotate(180deg);transform:rotate(180deg); -webkit-transform:rotate(180deg);
+background:url(../images/redup.png) no-repeat center center;background-size:10px auto;}
+#hunSort .sortNav .popup{position:absolute;top:41px; left:0; min-height:324px; overflow-y:auto;background:#fff;z-index:900; display:none;}
+#hunSort .sortNav .popup.show{display: block;}
+#hunSort .sortNav ul{min-height:100%;}
+#hunSort .sortNav ul li{ line-height:40px; text-indent:4.5%; font-size:14px; text-align:left; position:relative;}
+#hunSort .sortNav ul li:after{ position:absolute; bottom:0; left:50%; margin-left:-45%; width:90%; height:1px; background:#e6e6e6; content:"";}
+#hunSort .sortNav ul li a{ display:block; color:#666;}
+#hunSort .sortNav ul .selected a{color:#ff608e}
+#hunSort .allStyle .popup{background:#f5f5f5}
+#hunSort .allStyle .selectTag{width:40%;text-align: center;color:#666;font-size:14px;}
+#hunSort .allStyle .active .selectTag{background:#fff}
+#hunSort .allStyle ul{position: absolute;width:60%;right: 0;top:0;background:#fff;box-sizing:padding-box;padding-left:5px;display: none}
+#hunSort .allStyle .active ul{display: block;}
+#hunSort .defaultSort .group{border-bottom: 1px solid #d4d4d4;margin:0 auto;width:90%;padding: 10px 0;text-align: left;color:#666;}
+#hunSort .defaultSort .group p{color:#999}
+#hunSort .defaultSort .group span{width:102px;border:1px solid #d4d4d4;border-radius:4px;display: inline-block;line-height:35px;padding:0px 20px;margin-right:15px;text-align:center;box-sizing: border-box;}
+#hunSort .defaultSort .group input{width: 90px;border:1px solid #d4d4d4;border-radius:6px;padding:8px 3px;text-align:center;vertical-align: middle;}
+#hunSort .defaultSort .group input:nth-child(2){margin-right: 5px;}
+#hunSort .defaultSort .group i{display:inline-block;width:15px;height:1px;background:#d4d4d4;margin-right: 5px;vertical-align: super;}
+#hunSort .defaultSort .group span.selected,.defaultSort .group input:focus{border-color:#ff6e6e;color: #ff6e6e;}
+#hunSort .defaultSort .group:nth-child(3){padding-bottom:70px;border-bottom: none;}
+#hunSort .defaultSort .group.bottom{position:fixed;bottom:0;background:#fff;border-bottom:none;border-top:1px solid #d4d4d4;width:100%;z-index:5}
+#hunSort .defaultSort .group.bottom span{padding:0;width:42.5%;margin-left:5%;margin-right:0;border-radius:8px;}
+#hunSort .defaultSort .group.bottom .submit{background:#ff6e6e;color:#fff;border-color:#ff6e6e;}
+
+/* banner */
+.banner{width:100%;position:relative;}
+.banner img{display: block;width:100%;}
+.close{position:absolute;top:0;right:0;background:url(../images/close.png) no-repeat 12px 4px;background-size:14px auto;height:30px;width:30px;}
+
+/* 列表 */
+#hunList{background:#fff}
+/*#hunList ul{display: none;}*/
+#hunList ul li{ position:relative; padding:15px 5% 13px; width:100%;box-sizing:border-box; -webkit-box-sizing:border-box;}
+#hunList ul li:after{ position:absolute; left:50%; bottom:0; width:90%; margin-left:-45%; height:1px; background:#d8d8d8; content:"";}
+#hunList ul li:last-child:after{ height: 0;}
+#hunList ul li .hunListItem{ display:block;}
+#hunList ul li dt{ width:100px;float:left}
+#hunList ul li dt img{ width:100px; height:63px;}
+#hunList ul li dd{ margin-left:109px;}
+#hunList ul li dd h3{ font-size:16px; color:#333; height:20px;max-width:73%;float:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.title{height:20px;}
+.title .icons{float: left;padding-top: 3px;}
+.title .icons span{padding: 6px 8px; background-repeat: no-repeat; background-position: center center;background-size: 14px auto;}
+.title .icons .li{background-image: url(../images/li.png);}
+.title .icons .hui{background-image: url(../images/hui.png);}
+.title .icons .fan{background-image: url(../images/fan.png);}
+.title .icons .cu{background-image: url(../images/cu.png);}
+.title .icons .fu{background-image: url(../images/fu.png);}
+#hunList ul li dd .returnCash{font-size:12px; position:relative; margin-top:2px;line-height:20px;color:#a0a0a0;}
+#hunList ul li dd .row1{color:#333;color:#666; margin-bottom: 2px;}
+#hunList ul li dd .row1 .big{font-size:12px;}
+#hunList ul li dd .row1 .big i{ font-size: 16px; color: #666;}
+#hunList ul li dd .row2 .style{margin-left: 10px;}
+
+/* 列表数据为空 */
+.dataEmpty{ height:110px; line-height: 23px; text-align: center;color: #666; background:url(../images/dataempty.png) no-repeat center 65px; background-size: 72px auto; padding-top: 150px;}
+.dataEmpty h3{font-size: 15px; }
+.dataEmpty p{ font-size: 15px;color: #999;}
+
+
+/* 分页 */
+#page{display:none}
+

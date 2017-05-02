@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>【北京婚车租赁_婚车租车_婚庆租车】价格 -到喜啦</title>
+	<meta name="keywords" content="北京婚车租赁,北京婚车租赁价格,北京婚车租车,北京婚庆租车" />
+	<meta name="description" content="到喜啦" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />  
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="full-screen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">  
+	<link rel="apple-touch-icon" href="//s4.dxlfile.com/public/img/logo/wap/256_car.png"/>
+	<link href="__PUBLIC__/css/ccdc7afb51094e12bddb103764f09f9b.css" rel="stylesheet" type="text/css" />
+	<script src="__PUBLIC__/js/d42220c7656749f39a5923d976f788d3.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+    	<div class="secTitMain">
+			婚车
+			<a class="prev" href="/"></a>
+		</div>
+	</header>
+	<section id="info" class="items">
+		<?php foreach ($arr as $key => $value) {?>
+		<li style="display: table-cell; vertical-align: top; width: 414px;"><img src="__PUBLIC__/img/user/{$value.car_img}?id=<?php echo $value['car_id'];?>"></li>
+			<font style=" font-size:18px;"><span>&nbsp;&nbsp;</span><?php echo $value['car_name'];?></font>
+			<div class="dxlPrice" style=" text-aligncenter;"><font color='#CCCCCC' size=3; ><span>&nbsp;&nbsp;</span>到喜啦独享价：</font><span><font color='#FF0000' size=5 ><i>￥<?php echo $value['car_salary'];?></i></font><font color='#666666'>/半天</font></span></div>
+		
+			<!--下拉-->
+			<div class="more touchToClick"><i></i></div>
+		<?php }?>
+		
+	</section>
+	
+
+	
+	
+</body>
+</html>

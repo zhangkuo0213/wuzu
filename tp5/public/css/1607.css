@@ -1,0 +1,105 @@
+﻿header{ border-bottom: 1px solid #dec4cd; display: none;}
+
+/*城市选择*/
+#cityMain{ width:100%; position:relative;}
+#cityMain img{ width: 100%; height: auto; display: block;}
+
+/*领取返现资格*/
+#return{ background:url(../images/07_tiaowen.jpg) repeat center top; background-size: 80px;width: 100%; color: #fff;}
+#return .timeMain{ height: 50px; line-height: 50px;background: #ff78b1;box-shadow: 0 0 3px rgba(0,0,0,.2);padding: 0 4%; font-size: 13px; }
+#return .timeMain p{background:url(../images/07_clock.png) no-repeat left center;background-size: 16px; padding-left:7%;
+width: 100%; margin: 0 auto;box-sizing: border-box;-webkit-box-sizing: border-box;}
+#return .timeMain .timeBox i{ background: #e56c9f; text-align: center; font-size: 15px; line-height:20px; padding:0 1px; border-radius: 3px;
+display: inline-block; margin: 0 5px;}
+#return .rules{ line-height: 20px; padding: 10px 5%; }
+#return .rules h3{ font-size: 15px; margin-bottom: 2px;}
+#return .rules p{font-size: 13px;}
+#return .getReturn{ border-radius: 5px; background: #ffd800; text-align: center; color: #cf9700;font-size: 16px; line-height: 40px; margin: 12px 0;
+box-shadow:inset 2px 2px 0px #ffea75,1px 2px 4px rgba(0,0,0,.2); -webkit-box-shadow:inset 2px 2px 0px #ffea75,1px 2px 4px rgba(0,0,0,.2); }
+
+/*婚宴*******婚纱********婚礼策划*/
+.items{ padding: 15px 0;}
+.items .tit{ line-height: 20px; position: relative; text-align: center; margin-bottom: 15px;}
+.items .tit:before{ content: "";position: absolute; top: 10px; left: 0; width: 100%; height: 1px; z-index: 1;}
+.items .tit span{ padding: 0 20px;position: relative; z-index: 2;font-size:18px;  font-family: "宋体";}
+.items .tit span:before,.items .tit span:after{ position: absolute; content: ""; top: 0; height: 18px; width: 1px;
+-ms-transform: rotate(5deg);transform: rotate(5deg);-webkit-transform: rotate(5deg);}
+.items .tit span:before{ left: 0;}
+.items .tit span:after{ right: 0;}
+.items .titImg img{ display: block; width: 100%; height: auto;margin-bottom: 5px;}
+.items ul{ display: block;}
+.items ul li{float: left; width:45.5%; background: #fff; margin:0 0 3% 3%; padding: 2%;  min-height: 190px;
+box-sizing: border-box; -webkit-box-sizing: border-box;}
+.items a{ display: block;}
+.items ul li img{ width: 100%; height: auto;}
+.items ul li .details{ border-radius: 5px; line-height: 25px; text-align: center; color: #fff; background: #ff388d;}
+.items .more{  border-radius: 20px; text-align: center; font-size: 16px; height: 34px;line-height: 34px; width: 50%; margin: 8px auto;}
+.items .more a{color: #fff;}
+
+#hunYan{ background: #ffedc5;}
+#hunYan .tit:before{ background: #ffa74b;}
+#hunYan .tit span{ background: #ffedc5;color: #ffa74b; }
+#hunYan .tit span:before,#hunYan .tit span:after{ background: #ffa74b;}
+#hunYan li div{ height: 20px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+#hunYan li .names{ color: #333; font-size: 14px;line-height: 20px; padding-top: 3px;}
+#hunYan li .infos{ color: #999;line-height: 16px; line-height: 20px;border-bottom:1px dashed #d0d0d0; padding: 3px 0;  }
+#hunYan li .discounts{ color: #ff9900; font-size: 14px; padding: 5px 0;}
+#hunYan .more{border: 2px solid #ffba47;background:url(../images/07_more_1.jpg) repeat center top;background-size: 15px;}
+
+#hunSha{ background: #bbf7f9;}
+#hunSha .tit:before{ background: #48c4c9;}
+#hunSha .tit span{ background: #bbf7f9;color: #48c4c9; }
+#hunSha .tit span:before,#hunSha .tit span:after{ background: #48c4c9;}
+#hunSha li div{ height: 20px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+#hunSha li .names{ color: #333; font-size: 14px;line-height: 20px; padding-top: 3px;}
+#hunSha li .infos{ color: #999;line-height: 16px; line-height: 20px;border-bottom:1px dashed #d0d0d0; padding: 3px 0;  }
+#hunSha li .discounts{ height: auto; padding: 5px 0;}
+#hunSha li .discounts h4{ color: #ff388d; margin-bottom: 3px; height: 15px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap; }
+#hunSha li .discounts p{color: #ff388d;}
+#hunSha li .discounts p span{font-size: 12px; }
+#hunSha li .discounts p span i{font-size: 14px; }
+#hunSha li .discounts p .newPrice{ color: #ff388d; padding-right: 4px;font-weight: bold; }
+#hunSha li .discounts p .oldPrice{ color: #bbb;padding-left: 3px; text-decoration: line-through; }
+#hunSha .more{border: 2px solid #48b7bc;background:url(../images/07_more_2.jpg) repeat center top;background-size: 15px;}
+
+#hunQing{ background: #ffd6e8;}
+#hunQing .tit:before{ background: #ff76a4;}
+#hunQing .tit span{ background: #ffd6e8;color: #ff76a4; }
+#hunQing .tit span:before,#hunQing .tit span:after{ background: #ff76a4;}
+#hunQing li div{ height: 20px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+#hunQing li .names{ color: #333; font-size: 14px;line-height: 20px; padding-top: 3px;}
+#hunQing li .discounts{ height: auto; padding: 5px 0;}
+#hunQing li .discounts p{ color: #ff388d; line-height: 18px; height: 18px;overflow:hidden;text-overflow:ellipsis;white-space: nowrap;}
+#hunQing .more{border: 2px solid #ff6e99;background:url(../images/07_more_3.jpg) repeat center top;background-size: 15px;}
+
+/*活动规则*/
+.activeRule{ padding: 12px 5% 20px; background: #ff64a6; color:#fff;}
+.activeRule p{line-height: 16px; margin-bottom: 12px;}
+.activeRule img{ width:100%; height:auto;display: block;}
+
+/*品牌专区*/
+#pinPai{margin: 0 auto;background:url(../images/07_botbg.jpg) repeat center top;background-size: 8px;}
+#pinPai img{ width: 100%; height: auto;margin-top: 15px; display: block;}
+#pinPai img:first-child{ margin-top: 0;}
+
+/* 距离底部间距 */
+.botHeight{ height: 75px; }
+
+/* 底部报名入口 */
+.botEntry{ background: #ff6893; position: fixed;bottom: 0; left: 0; width: 100%;padding:20px 0;z-index: 10;}
+.botEntry:before,.botEntry:after{content: ""; position: absolute;
+background: url(../images/activetyle.png) no-repeat center top;background-size:62px auto; }
+.botEntry:before{ width: 62px; height: 62px; top:5px; left:4%; }
+.botEntry:after{  top:-2px;left: 0; width: 100%; height:11px;
+background: url(../images/topbg.png) repeat-x center top;background-size: 11px auto; }
+.botEntry .mobile{border: 1px solid #df2359; border-radius:3px; background-color: #fff;margin-left:7.2em; line-height: 25px; padding:2px 5%;
+background-image: url(../images/mobile.png);background-repeat:no-repeat;background-position: 4% center;  background-size: 8px auto; }
+.botEntry .toEntry{position: absolute;right:4%;top:20px; border-radius:3px; background: #cf2051; text-align: center; font-weight: bold; line-height:30px;
+width:25%;color: #fff;}
+
+@media only screen and (max-device-width:320px){
+	.botEntry .mobile{ width: 31%;}
+}
+@media only screen and (min-device-width:321px){
+	.botEntry .mobile{ width: 35%;}
+}

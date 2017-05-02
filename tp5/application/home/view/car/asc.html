@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>【北京婚车租赁_婚车租车_婚庆租车】价格 -到喜啦</title>
+	<meta name="keywords" content="北京婚车租赁,北京婚车租赁价格,北京婚车租车,北京婚庆租车" />
+	<meta name="description" content="到喜啦" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no" />  
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-touch-fullscreen" content="yes"/>
+	<meta name="full-screen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">  
+	<link rel="apple-touch-icon" href="//s4.dxlfile.com/public/img/logo/wap/256_car.png"/>
+	<link href="__PUBLIC__/css/ccdc7afb51094e12bddb103764f09f9b.css" rel="stylesheet" type="text/css" />
+	<script src="__PUBLIC__/js/d42220c7656749f39a5923d976f788d3.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+    	<div class="secTitMain">
+			婚车
+			<a class="prev" href="/"></a>
+		</div>
+	</header>
+	<section id="resultList">
+		<ul><li class="brandType" data-brand="8">
+							<?php foreach ($arr as $key => $value) { ?>
+								<li><a href="{:url('home/car/xq')}?id=<?php echo $value['car_id'];?>" class="resultListItem"><dl class="clearfix"><dt><img src="__PUBLIC__/img/user/{$value.car_img}" width="150px" height="80px"></dt><dd><div class="list-detail-word"><span><?php echo $value['car_name'];?></span><span class="price">￥<?php echo $value['car_salary'];?>/5小时</span></div></dd><div class="fire">432</div></dl></a></li>
+							<?php }?>
+						</li>
+		</ul>
+		<div class="nomore"><span>没有更多了<span></div>
+		<!--查询无结果 start-->
+		<div class="noResult" ><p>很抱歉</p><p>没有找到相关内容哦</p></div>
+		<!--查询无结果 end-->
+	</section>
+	
+
+	
+	
+</body>
+</html>

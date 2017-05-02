@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta content="fullscreen=yes,preventMove=no" name="ML-Config">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <title>绑定手机号</title>
+    <link href="__PUBLIC__/css/login.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/base.js"></script>
+</head>
+
+<body class="bgGray">
+
+<header>
+    <a href="javascript:;" class="close" onclick="history.go(-1)"><em>关闭</em></a>
+    到喜啦
+</header>
+<div id="wedding">
+    <div id="content">
+        <div class="apply">
+            <form action="{:url('initialize/register')}" method="post" target="_top">
+            <dl>
+                <dt>手机号</dt>
+                <dd class="getCode">
+                    <a href="javascript:;" disabled class="gray" id='code_btn'>获取验证码</a>
+                    <!--<a href="javascript:;" class="org">获取验证码</a>-->
+                    <!--<a href="javascript:;" class="org2">重新获取60S</a>-->
+                    <input id='tel' name="phone" type="text" placeholder="请输入手机号" maxlength="11" />
+                    <span class="del"></span>
+                </dd>
+            </dl>
+            <div class="error">您的手机号输入有误！</div>
+            <dl>
+                <dt>验证码</dt>
+                <dd>
+                    <input id='code' name="checkCode" type="text" placeholder="请输入验证码" maxlength="6" />
+                    <span class="del"></span>
+                </dd>
+            </dl>
+            <div class="error">您的验证码输入有误！</div>
+            <div class="space40"></div>
+            <!--<a href="javascript:;" class="orangeBtnO" id="submit">登录</a>-->
+            <!--<a href="javascript:;" class="orangeBtnO orangeBtn">登录</a>-->
+                <center>
+            <button class="orangeBtn" type="submit"  style="width: 300px;">登录</button>
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    /** 默认按键灰色 **/
+    $(function(){
+        $('.orangeBtn').attr('disabled',"true");
+        $('.orangeBtn').css('background-color','#C0C0C0');
+    });
+    var countdown=60;
+    function settime(obj) {
+        if (countdown == 0) {
+            obj.attr('disabled','disabled').addClass('org').removeClass('org2');
+            obj.html("获取验证码");
+            countdown = 60;
+            return;
+        } else {
+            obj.html("重新获取(" + countdown + ")");
+            countdown--;
+        }
+        setTimeout(function() {
+                settime(obj) }
+            ,1000)
+    }
+
+    /** input框焦点 **/
+    $('input').focus(function(){
+        $('.apply').children('dl').removeClass('active');
+        $(this).parent().parent().addClass('active');
+    });
+    $('input').blur(function(){
+
+        $(this).parent().parent().removeClass('active');
+    });
+
+    /***************** 表单验证 ********************/
+
+    function showRight(obj){
+        obj.parent().parent().removeClass('active');
+        obj.parent().parent().next().hide();
+    }
+    function showError(obj){
+        obj.parent().parent().addClass('active');
+        obj.parent().parent().next().show();
+    }
+    function setUser(rs){
+
+        var x = {};
+        x.BAIHE_DOMAIN = '.baihe.com';
+        x.DEFAULT_DOMAIN = '.hunli.baihe.com';
+        x.cookie = {
+            get: function(n) {
+                var cn = encodeURIComponent(n) + '=',
+                    cs = document.cookie.indexOf(cn),
+                    cv = null;
+                if(cs > -1) {
+                    var ce = document.cookie.indexOf(';', cs);
+                    if(ce === -1) {
+                        ce = document.cookie.length;
+                    }
+                    cv = decodeURIComponent(document.cookie.substring(cs + cn.length, ce));
+                }
+                return cv;
+            },
+            set: function(n, v, e, p, d, s) {
+                var ct = encodeURIComponent(n) + '=' + encodeURIComponent(v);
+                if(e instanceof Date) {
+                    ct += '; expires=' + e.toGMTString();
+                }
+                if(p) {
+                    ct += '; path=' + p;
+                }
+                if(d) {
+                    ct += '; domain=' + d;
+                }
+                if(s) {
+                    ct += '; secure';
+                }
+                document.cookie = ct;
+            },
+            rm: function(n, p, d, s) {
+                this.set(n, '', new Date(0), p, d, s);
+            }
+        };
+
+        var d = new Date();
+        d.setTime(d.getTime() + 1000 * rs.seconds);
+        x.user.id = rs.userid;
+        x.user.icon = rs.headPicUrl;
+        x.user.mobile = rs.mobile;
+        x.user.mobile_show = get_phone_show(rs.mobile);
+        x.cookie.set('baihe_uid', rs.userid, d, '/', x.DEFAULT_DOMAIN);
+        x.cookie.set('baihe_mobile_number', x.user.mobile_show, d, '/', x.DEFAULT_DOMAIN);
+        x.cookie.set('HLAuthCookie', rs.cookieVal, d, '/', x.DEFAULT_DOMAIN);
+    }
+
+    function get_phone_show(mobile) {
+        return mobile.substr(0, 3) + '*****' + mobile.substr(8);
+    }
+
+    var iTel=false;
+    var iCode=false;
+    /*** 手机号验证 ***/
+    $('#tel').keyup(function(){
+        if($(this).val().replace(/(^\s+)|(\s+$)/g,"").length == 11){
+            $('#code_btn').removeAttr('disabled').removeClass('gray').addClass('org');
+            iTel=true;
+        }
+    });
+
+    $('#tel').blur(function(){
+        /*if($(this).val().replace(/(^\s+)|(\s+$)/g,"") == "" ){
+         showError($('#tel'));
+         $('#code_btn').addClass('gray').removeClass('org');
+         return false;
+         }else*/
+        if(/[^\d]/g.test($(this).val().replace(/(^\s+)|(\s+$)/g,""))==true  || $(this).val().replace(/(^\s+)|(\s+$)/g,"").length!=11){
+            showError($('#tel'));
+            $('#code_btn').attr('disabled','disabled').addClass('gray').removeClass('org');
+            iTel=false;
+            return false;
+        }else{
+            showRight($('#tel'));
+            $('#code_btn').removeAttr('disabled').removeClass('gray').addClass('org');
+            iTel=true;
+        }
+    })
+    /*** 验证码发送 ***/
+    $('#code_btn').click(function(){
+            var phone = $('#tel').val();
+            $.ajax({
+                type: "POST",
+                url: "send_phone",
+                data: {phone:phone},
+                success:function(msg){
+                    iCode=true;
+                    $('#code_btn').attr('disabled','disabled').addClass('org2').removeClass('org');
+                    settime($('#code_btn'));
+                    $('.orangeBtn').removeAttr("disabled");
+                    $('.orangeBtn').css('background-color','red');
+                }
+            });
+    });
+
+    $('#submit').click(function(){
+
+        var verifyCode = $('#code').val();
+        var mobileT = $('#tel').val();
+
+        //都输入正确
+        if(iTel && iCode && verifyCode && mobileT){
+            $.ajax({
+                type: "POST",
+                url: "/bj/setting/loginIn",
+                data: {
+                    params: JSON.stringify({
+                        mobile: mobileT,
+                        verifyCode: verifyCode
+                    })
+                },
+                dataType: "json",
+                success: function (d) {
+                    if((typeof d !== 'undefined' && d !== null ? d.code : void 0) === 200) {
+                        //window.location.href='/bj/my/index';
+                        //window.location.go(-1)
+                        self.location = document.referrer;
+                    }else{
+                        alert(d.msg);
+                    }
+                },
+                error: function (d) {
+                    alert('请重新提交');
+                }
+            });
+        }else{
+            if(iTel==false){
+                $('.apply').children('dl').eq(0).next().show();
+            }else if(iCode==false){
+                $('.apply').children('dl').eq(1).next().show();
+            }
+        }
+
+    });
+
+
+</script>
+</body>
+</html>

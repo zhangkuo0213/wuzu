@@ -1,0 +1,192 @@
+[ 2017-05-02T19:03:08+08:00 ] 127.0.0.1 127.0.0.1 GET /daone/wed/wuzu/tp5/public/
+[ log ] localhost/daone/wed/wuzu/tp5/public/ [运行时间：0.309018s][吞吐率：3.24req/s] [内存消耗：1,225.63kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4809710592; Hm_lvt_15577700f8ecddb1a927813c81166ade=1492049263,1492087761; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492952130,1493017591,1493089378,1493098346; _ga=GA1.1.217790516.1492141880; 2.png=1',
+  'referer' => 'http://localhost/daone/wed/wuzu/tp5/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\daone\wed\wuzu\tp5\framework\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-02T19:03:20+08:00 ] 127.0.0.1 127.0.0.1 GET /daone/wed/wuzu/tp5/public/index.php/home/index/index
+[ log ] localhost/daone/wed/wuzu/tp5/public/index.php/home/index/index [运行时间：1.642094s][吞吐率：0.61req/s] [内存消耗：2,523.28kb] [文件加载：55]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4809710592; Hm_lvt_15577700f8ecddb1a927813c81166ade=1492049263,1492087761; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492952130,1493017591,1493089378,1493098346; _ga=GA1.1.217790516.1492141880; 2.png=1; think_var=zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] Method [ <user> public method index ] {
+  @@ F:\phpStudy\WWW\daone\wed\wuzu\tp5\application\home\controller\Index.php 7 - 50
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\phpStudy\WWW\daone\wed\wuzu\tp5\public/../application/home\view\index\index.html [ array (
+  0 => 'lun',
+  1 => 'hunyan',
+  2 => 'hunsha',
+  3 => 'miyue',
+  4 => 'hunce',
+  5 => 'hunyans',
+  6 => 'hunshas',
+  7 => 'miyues',
+  8 => 'hunces',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090005s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  (  is_show=1 ) ORDER BY carousel_id  [ RunTime:0.034002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043002s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `hotel` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,3   [ RunTime:0.032001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026002s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ph_business` [ RunTime:0.026001s ]
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,3   [ RunTime:0.018001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.048003s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wedding_miyue` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,3   [ RunTime:0.029001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033002s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `car` [ RunTime:0.031002s ]
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.030002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036002s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `id`,`hotel_name`,`hotel_img1` FROM `hotel` LIMIT 0,10   [ RunTime:0.019001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.086004s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `pbusinessId`,`pbusinessImg`,`pbusinessTitle` FROM `ph_business` LIMIT 0,10   [ RunTime:0.059003s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.275015s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `miyue_id`,`url`,`address` FROM `wedding_miyue` LIMIT 0,10   [ RunTime:0.037002s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034002s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SELECT `car_id`,`car_name`,`car_salary`,`car_img` FROM `car` LIMIT 0,3   [ RunTime:0.022002s ]
+
+---------------------------------------------------------------
+[ 2017-05-02T19:03:21+08:00 ] 127.0.0.1 127.0.0.1 GET /daone/wed/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png
+[ log ] localhost/daone/wed/wuzu/tp5/public/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35.png [运行时间：0.125007s][吞吐率：8.00req/s] [内存消耗：1,228.62kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'daone',
+    1 => 'wed',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4809710592; Hm_lvt_15577700f8ecddb1a927813c81166ade=1492049263,1492087761; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492952130,1493017591,1493089378,1493098346; _ga=GA1.1.217790516.1492141880; 2.png=1; think_var=zh-cn',
+  'referer' => 'http://localhost/daone/wed/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/images/b1b5330ac05eb6d9cfd0a4fbf94b9f35_png' => '',
+  'tp5' => 'public',
+  'images' => 'b1b5330ac05eb6d9cfd0a4fbf94b9f35.png',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\daone\wed\wuzu\tp5\framework\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-02T19:03:22+08:00 ] 127.0.0.1 127.0.0.1 GET /daone/wed/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png
+[ log ] localhost/daone/wed/wuzu/tp5/public/images/1c58d343375cb934c75eee3c08b533c7.png [运行时间：0.145008s][吞吐率：6.90req/s] [内存消耗：1,228.62kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'daone',
+    1 => 'wed',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4809710592; Hm_lvt_15577700f8ecddb1a927813c81166ade=1492049263,1492087761; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492952130,1493017591,1493089378,1493098346; _ga=GA1.1.217790516.1492141880; 2.png=1; think_var=zh-cn',
+  'referer' => 'http://localhost/daone/wed/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/images/1c58d343375cb934c75eee3c08b533c7_png' => '',
+  'tp5' => 'public',
+  'images' => '1c58d343375cb934c75eee3c08b533c7.png',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\daone\wed\wuzu\tp5\framework\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-02T19:03:22+08:00 ] 127.0.0.1 127.0.0.1 GET /daone/wed/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif
+[ log ] localhost/daone/wed/wuzu/tp5/public/images/3da56b06895ac969ee4aab7ff059f590.gif [运行时间：0.142008s][吞吐率：7.04req/s] [内存消耗：1,228.62kb] [文件加载：38]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'daone',
+    1 => 'wed',
+    2 => 'wuzu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'pgv_pvi=4809710592; Hm_lvt_15577700f8ecddb1a927813c81166ade=1492049263,1492087761; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1492952130,1493017591,1493089378,1493098346; _ga=GA1.1.217790516.1492141880; 2.png=1; think_var=zh-cn',
+  'referer' => 'http://localhost/daone/wed/wuzu/tp5/public/css/index-w.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  '/images/3da56b06895ac969ee4aab7ff059f590_gif' => '',
+  'tp5' => 'public',
+  'images' => '3da56b06895ac969ee4aab7ff059f590.gif',
+)
+[ info ] [ LANG ] F:\phpStudy\WWW\daone\wed\wuzu\tp5\framework\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

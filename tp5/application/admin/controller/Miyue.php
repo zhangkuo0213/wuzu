@@ -109,53 +109,6 @@ class Miyue extends Entrance{
         //var_dump($arr);die;
         return view('reserve',array('list'=>$arr));
     }
-    //图片管理
-    public function manage(){
-        $id=$_GET['id'];
-        $list=Db::table('img_url')
-            ->alias('i')
-            ->join('img_position p','i.imgposition_id=p.imgposition_id')
-            ->join('wedding_miyue m','m.miyue_id=i.miyue_id')
-            ->where("m.miyue_id=$id")
-            ->select();
-        //var_dump($list);die;
-        //$this->assign('list',$list);
-        return view('miyueimg_manage',array('list'=>$list,'id'=>$id));
-    }
-    //图片添加页面
-    public function img_add(){
-        $id = $_GET['id'];
-        $data = Db::table('img_position')->select();
-        $this->assign('data',$data);
-        $this->assign('id',$id);
-        return view('img_add');
-    }
-    //执行图片添加
-    public function img_add_do(){
-        $data = $_POST;
-        $data = Db::table('img_url')->insert($data);
-        $this->redirect('show');
-    }
-    //图片修改页面
-    public function img_update(){
-        $id = $_GET['id'];
-        $list = Db::table('img_url')->where("img_id=$id")->select();
-        $data = Db::table('img_position')->select();
-        $this->assign('data',$data);
-        $this->assign('list',$list);
-        return view('img_update');
-    }
-    //执行图片修改
-    public function img_update_do(){
-        $data = $_POST;
-        $id = $data['img_id'];
-        $res = Db::table('img_url')->where("img_id=$id")->update($data);
-        $this->redirect('show');
-    }
-    //图片删除
-    public function img_del(){
-        $id = $_GET['id'];
-        $res = Db::table('img_url')->where("img_id=$id")->delete();
-        $this->redirect('show');
-    }
+
+
 }

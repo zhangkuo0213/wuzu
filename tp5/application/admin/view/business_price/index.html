@@ -37,6 +37,7 @@
 							<td width="308px" class="tdColor">套系价格</td>
 							<td width="308px" class="tdColor">套系标题</td>
 							<td width="308px" class="tdColor">所属商家</td>
+							<td width="308px" class="tdColor">所属类型</td>
 							<td width="125px" class="tdColor">操作</td>
 						</tr>
 						{foreach $data as $vo} 
@@ -54,6 +55,7 @@
 								<td>{$vo.ppriceMoney}</td>
 								<td>{$vo.ppriceTitle}</td>
 								<td>{$vo.pbusinessTitle}</td>
+								<td>{$vo.ptypeName}</td>
 								<td><a href="{:url('admin/BusinessPrice/priceUpdate')}?id={$vo.ppriceId}"><img class="operation"
 										src="__PUBLIC__/img/update.png"></a> <a href="{:url('admin/BusinessPrice/priceDelete')}?id={$vo.ppriceId}"><img class="operation delban"
 									src="__PUBLIC__/img/delete.png"></a></td>

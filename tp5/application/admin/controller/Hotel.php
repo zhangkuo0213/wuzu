@@ -73,6 +73,7 @@ class Hotel extends Entrance{
 
         $wheres= "?hotel_name=".$hotel_name."&hotel_address=".$hotel_address."&";
         $page =  str_replace("?",$wheres,$page);
+
         $this->assign('list', $list);
         $this->assign('page', $page);
         return $this->fetch('hotel');

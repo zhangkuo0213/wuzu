@@ -3,8 +3,10 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Db;
 use think\Request;
-use app\admin\model\Upload;
+use app\admin\model\Up;
 use app\admin\controller\Entrance;
+use Qiniu\Auth;
+use Qiniu\Storage\UploadManager;
 class Business extends Entrance{
 	public function index(){
 		$Db=Db::table('ph_business');
@@ -21,16 +23,17 @@ class Business extends Entrance{
 	//接受添加的参数
 	public function getAdd(){
 		$data =$_POST;
-		$file = request()->file('image');
-		$update=new Upload();
-		$path=$update->upload($file); 
-		$data['pbusinessImg']=$path; 
+		$filePath = $_FILES['image']['tmp_name'];
+		$name=$_FILES['image']['name'];
+		$fileName = substr($name,0,strpos($name,"."));
+		$model=new Up;
+		$data['pbusinessImg']=$model->up($fileName,$filePath);
 		$Db=Db::table('ph_business');
 		$re=$Db->insert($data);
 		if($re)
 		{
 			$this->redirect('Business/index');
-		}
+		}			
 	}
 
 	//修改
@@ -47,15 +50,20 @@ class Business extends Entrance{
 		$data =$_POST;
 		$id=$data['pbusinessId'];
 		unset($data['pbusinessId']);
-		$file = request()->file('image'); 
-		$update=new Upload();
-		$path=$update->upload($file); 
-		$data['pbusinessImg']=$path; 
+		$file=$_FILES['image'];
+		if($file['error']===0)
+		{
+			$filePath = $file['tmp_name'];
+			$name=$file['name'];
+			$fileName = substr($name,0,strpos($name,"."));
+			$model=new Up;
+			$data['pbusinessImg']=$model->up($fileName,$filePath);
+		}	 
 		$re=Db::table('ph_business')->where('pbusinessId',"$id")->update($data);
 		if($re)
 		{
 			$this->redirect('Business/index');
-		}	
+		}		
 	}
 
 	//删除

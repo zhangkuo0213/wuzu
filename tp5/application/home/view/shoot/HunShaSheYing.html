@@ -194,7 +194,7 @@
             if ($(window).scrollTop() == $(document).height() - $(window).height()){
                 if(parseInt($(".pagenum:last").val()) <= parseInt($(".total-page").val())) {
                     var pagenum = parseInt($(".pagenum:last").val()) + 1;
-                    getresult('http://www.jjxin.xin/wx/tp5/public/index.php/home/shoot/shoot?page='+pagenum);
+                    getresult('http://localhost/Wedding/wuzu/tp5/public/index.php/home/shoot/shoot?page='+pagenum);
                 }
             }
         });

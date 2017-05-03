@@ -27,7 +27,7 @@
 
 <section id="txDetail">
     <div class="txDImg">
-        <img src="__PUBLIC__/{$price.ppriceImg}">
+        <img src="{$price.ppriceImg}">
     </div>
     <div class="txDPrice clearfix">
         <div class="txPriceLe">
@@ -82,7 +82,7 @@
         {foreach $order as $vo}
         <li>
             <a href="{:url('home/Shoot/priceDetails')}?id={$vo.ppriceId}">
-                <img class="txTuiLe" src="__PUBLIC__/{$vo.ppriceImg}" >
+                <img class="txTuiLe" src="{$vo.ppriceImg}" >
                 <div class="txTuiRi">
                     <h3>{$vo.ppriceTitle}</h3>
                     <div class="returnCash">

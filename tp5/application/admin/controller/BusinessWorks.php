@@ -2,6 +2,7 @@
 namespace app\admin\controller;
 use think\Controller;
 use think\Db;
+use app\admin\model\Up;
 use think\Request;
 use app\admin\controller\Entrance;
 class BusinessWorks extends Entrance{
@@ -25,24 +26,18 @@ class BusinessWorks extends Entrance{
 		$re=$Db->insert($data);
 		if($re)
 		{
+			$files=$_FILES['img'];
+			$model=new Up;
+			$imgPath=$model->duo($files);
+
 			$userId =$Db->getLastInsID();
-			$files = request()->file('img');
-			foreach($files as $file){
-				// 移动到框架应用根目录/public/uploads/ 目录下
-				$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
-				if($info){
-					// 成功上传后 获取上传信息   
-					$path=str_replace("\\", "/", $info->getSaveName()); 
-					$img=array();  
-					$img['pworksId']=$userId;
-					$img['pimgImg']='uploads/'.$path; 
-					
-						$res=Db::table('ph_business_img')->insert($img);
-				}else{
-					// 上传失败获取错误信息
-					echo $file->getError();
-				}			
-					
+
+			// $files = request()->file('img');
+			foreach($imgPath as $file){ 
+				$img=array();  
+				$img['pworksId']=$userId;
+				$img['pimgImg']=$file; 
+				$res=Db::table('ph_business_img')->insert($img);					
 			}
 			if($res)
 			{

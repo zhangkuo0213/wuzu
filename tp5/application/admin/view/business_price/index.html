@@ -44,11 +44,7 @@
 								<td>{$vo.ppriceId}</td>
 								<td>
 									<div class="bsImg">
-										{if condition="substr($vo.ppriceImg,-4) eq '.mp4'"}
-										<video src="__PUBLIC__/{$vo.ppriceImg}"></video>
-										{else/}
-										<img src="__PUBLIC__/{$vo.ppriceImg}">
-										{/if}
+										<img src="{$vo.ppriceImg}">
 									</div>
 								</td>
 								<td>{$vo.ppriceMoney}</td>

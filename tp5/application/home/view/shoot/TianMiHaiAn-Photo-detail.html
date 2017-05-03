@@ -64,7 +64,7 @@ body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
 		<div class="grid">
 			<div class="imgholder">
 				<input type="hidden" class="id" value="<?php echo $v['pworksId']?>">
-				<img class="lazy thumb_photo" title="<?php echo $k+1?>" src="__PUBLIC__/images/pixel.gif" data-original="__PUBLIC__/<?php echo $v['pimgImg']?>" width="225" />
+				<img class="lazy thumb_photo" title="<?php echo $k+1?>" src="__PUBLIC__/images/pixel.gif" data-original="<?php echo $v['pimgImg']?>" width="225" />
 			</div>
 		</div>
 		<?php endforeach ?>			
@@ -90,7 +90,7 @@ body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
 		<div class="left"></div>
 		<div class="right"></div>
 		{foreach $img as $v}
-		<img class="img" src="__PUBLIC__/{$v.pimgImg}">
+		<img class="img" src="{$v.pimgImg}">
 		{/foreach}
 	</div>
 	<div class="bottom">共 <span id="img_count">x</span> 张 / 第 <span id="xz">x</span> 张</div>

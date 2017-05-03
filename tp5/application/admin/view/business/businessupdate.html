@@ -26,15 +26,8 @@
 						商家名称：<input type="text" name="pbusinessTitle" value="{$info.pbusinessTitle}" class="input1" />
 					</div>
 					<div class="bbD">
-					<img src="__PUBLIC__/{$info.pbusinessImg}" alt="" />
+					<img src="{$info.pbusinessImg}" alt="" />
 						上传图片：<input type="file" name="image"/>
-					</div>
-					<div class="bbD">
-						<p class="bbDP">
-							<input type="hidden" name="pbusinessId" value="{$info.pbusinessId}" class="input1" />
-							<button type="submit" class="btn_ok btn_yes">提交</button>
-							<a class="btn_ok btn_no" href="#">取消</a>
-						</p>
 					</div>
 					<div class="bbD">
 						类型：
@@ -47,6 +40,13 @@
 							{/if}
 							{/foreach}
 						</select>
+					</div>
+					<div class="bbD">
+						<p class="bbDP">
+							<input type="hidden" name="pbusinessId" value="{$info.pbusinessId}" class="input1" />
+							<button type="submit" class="btn_ok btn_yes">提交</button>
+							<a class="btn_ok btn_no" href="#">取消</a>
+						</p>
 					</div>
 				</form> 
 				</div>

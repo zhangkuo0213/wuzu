@@ -33,7 +33,7 @@
 </header>
 <!-- 顶部 end -->
 <section id="sellerDetail">
-    <img src="__PUBLIC__/{$data.pbusinessImg}">
+    <img src="{$data.pbusinessImg}">
 
     <div class="detailTit" url="TianMiHaiAn" biz_id="8062">
         <h3 ><span>{$data.pbusinessTitle}</span>
@@ -73,7 +73,7 @@
             <li>
                 <a href="{:url('home/Shoot/priceDetails')}?id={$vo.ppriceId}">
                     <div class="smallImg">
-                        <img src="__PUBLIC__/{$vo.ppriceImg}">
+                        <img src="{$vo.ppriceImg}">
                     </div>
                     <h3>{$vo.ppriceTitle}</h3>
                     <div class="returnCash">
@@ -98,7 +98,7 @@
             <li>
                 <a href="{:url('home/Shoot/worksDetails')}?id={$ve.pworksId}" >
                     <div class="smallImg">
-                        <img src="__PUBLIC__/{$ve.img}" width="800px">
+                        <img src="{$ve.img}" width="800px">
                         <span>{$ve.imgNum} 张</span>
                     </div>
                     <h3>{$ve.pworksName}</h3>
@@ -150,7 +150,7 @@
         {foreach $order as $v}
         <li>
             <a href="{:url('home/Shoot/xiangQing')}?id={$v.pbusinessId}">
-                <img class="sellTXLe" src="__PUBLIC__/{$v.pbusinessImg}" >
+                <img class="sellTXLe" src="{$v.pbusinessImg}" >
                 <div class="sellTXRi">
                     <h3><span>{$v.pbusinessTitle}</span>
                          <i class="fu"></i>

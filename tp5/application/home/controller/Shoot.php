@@ -34,7 +34,7 @@ class Shoot extends Controller{
 
             foreach($faq as $k=>$v) {
                 $output .=  '<li><a href="../../../../public/index.php/home/Shoot/xiangQing?id='.$faq[$k]["pbusinessId"].'" class="sellerListItem">';
-                $output .=  '<dl class="clearfix"><dt><img src="../../../../public/'.$faq[$k]["pbusinessImg"].'"></dt>';
+                $output .=  '<dl class="clearfix"><dt><img src="'.$faq[$k]["pbusinessImg"].'"></dt>';
                 $output .=  '<dd><div class="title"><h3><i>'.$faq[$k]["pbusinessTitle"].'</i><span class="fu"></span></h3></div>';
                 $output .=  '<div class="returnCash"><p class="row1"><span class="big">￥<i>5980-12980</i>/套</span></p>';
                 $output .= '<p class="row2"><span class="district">黄浦区 宝山区</span><span class="style">'.$faq[$k]["ptypeName"].'</span></p>';

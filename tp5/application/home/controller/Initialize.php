@@ -7,6 +7,7 @@ use think\Controller;
 use think\Db;
 use think\Cookie;
 use app\home\model\Ucpaas;
+use app\home\model\Public_function;
 class Initialize extends Controller
 {
     public function user()
@@ -72,11 +73,16 @@ class Initialize extends Controller
     public function register()
     {
         if($_POST){
-         $post = $_POST;
-         $phone_yan = Cookie::get('phone_yan');
+            $post = $_POST;
+            //使用公共方法
+            $public = new Public_function();
+            //过滤数组
+            $post = $public->filterArray($post);
+            $phone_yan = Cookie::get('phone_yan');
          if($phone_yan==$post['checkCode']&&isset($phone_yan)){
              $ca = Cookie::get('getJson');
              $phone = $post['phone'];
+             $phone = addslashes($phone);
              $post['user_openid'] = $ca['openid'];
              $post['user_phone'] = $phone;
              $post['user_time'] = time();

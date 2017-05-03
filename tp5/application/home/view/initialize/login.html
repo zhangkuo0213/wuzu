@@ -167,7 +167,7 @@
          }else*/
         if(/[^\d]/g.test($(this).val().replace(/(^\s+)|(\s+$)/g,""))==true  || $(this).val().replace(/(^\s+)|(\s+$)/g,"").length!=11){
             showError($('#tel'));
-            $('#code_btn').attr('disabled','ture').addClass('gray').removeClass('org');
+            $('#code_btn').attr('disabled','disabled').addClass('gray').removeClass('org');
             iTel=false;
             return false;
         }else{

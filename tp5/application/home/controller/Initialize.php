@@ -109,6 +109,8 @@ class Initialize extends Controller
     public function send_phone()
     {
         $phone = $_POST['phone'];
+        $phone = addslashes($phone);
+        if(empty($phone)){return false;exit(0);}
         //初始化必填
         $options['accountsid']='2159096189b1e44aa1edd026096618a1';
         $options['token']='69d9533854e1040c7baddb479bd1f9c3';

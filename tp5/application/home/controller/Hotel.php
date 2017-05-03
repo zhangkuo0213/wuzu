@@ -40,6 +40,11 @@ class Hotel extends Controller{
     //酒店详细信息
     public function hotel_xq(){
         $id=intval($_GET['id']);
+        $fileName = "../public/cache/$id.html";
+        if(file_exists($fileName)){
+            include $fileName;//缓存的页面
+            exit();
+        }
         $list =Db::table('hotel')->where("id=$id")->select();
         $arr =Db::table('package')->where("hotel_id=$id")->select();
         $number =Db::table('package')->where("hotel_id=$id")->count();
@@ -47,7 +52,10 @@ class Hotel extends Controller{
         $arr['hotel_id']=intval($id);
         $this->assign('list', $list);
         $this->assign('arr', $arr);
-        return view('default');
+//        return view('default');
+        $data = $this->fetch('default');
+        file_put_contents($fileName,$data);
+        echo $data;
     }
     //酒店菜单
     public function hotel_package(){

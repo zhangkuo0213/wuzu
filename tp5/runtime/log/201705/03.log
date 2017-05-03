@@ -1,0 +1,47 @@
+[ 2017-05-03T11:34:55+08:00 ] 127.0.0.1 127.0.0.1 GET /new/wuzu/tp5/public/index.php/admin/miyue/show.html
+[ log ] 127.0.0.1/new/wuzu/tp5/public/index.php/admin/miyue/show.html [运行时间：0.321018s][吞吐率：3.12req/s] [内存消耗：2,503.57kb] [文件加载：55]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'miyue',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:53.0) Gecko/20100101 Firefox/53.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://127.0.0.1/new/wuzu/tp5/public/index.php/admin/index/left.html',
+  'cookie' => 'Hm_lvt_b3a3fc356d0af38b811a0ef8d50716b8=1491044406; userInfoaccountclouds=1; Hm_lvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493082540,1493168890,1493725117,1493781773; Hm_lvt_96c5dc397e46524e7d236e225f0e3cfe=1493004947; ECSCP_ID=3c7146952bbde4a6c9eff27a9d7d328983abf485; PHPSESSID=kn50n35q4uj461cam591ti0et6; think_var=zh-cn; Hm_lpvt_1d2519efe52fbcddc471e1b2ee80eb9e=1493781773',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => '',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] Method [ <user> public method show ] {
+  @@ D:\phpStudy\WWW\php\new\wuzu\tp5\application\admin\controller\Miyue.php 19 - 28
+}
+
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\php\new\wuzu\tp5\public/../application/admin\view\miyue\miyue_show.html [ array (
+  0 => 'list',
+  1 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.051003s ] mysql:dbname=wedding;host=139.199.97.249;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `wedding_miyue` [ RunTime:0.027002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `wedding_miyue` LIMIT 1   [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `wedding_miyue` LIMIT 0,5   [ RunTime:0.047003s ]
+
+---------------------------------------------------------------

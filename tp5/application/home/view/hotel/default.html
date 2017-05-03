@@ -28,7 +28,7 @@
 
 <section id="topImg">
     <div class="TopImgBox">
-        <img src="__PUBLIC__/img/user/{$list[0]['hotel_img1']}">
+        <img src="http://omr2ajk9i.bkt.clouddn.com/{$list[0]['hotel_img1']}">
     </div>
     <?php foreach($list as $k=>$v){ ?>
     <div class="topInfos">
@@ -52,7 +52,6 @@
         <li><a href="//m.daoxila.com/bj/HunYan/DuoLanHuiMei-Map"><span>{$v.hotel_address}</span><span class="shopBusy">【商家繁忙，请提前预约】</span></a></li>
         <li class="checkInfoDialog">酒店详情介绍 </li>
         <li><a href="tel:{$v.hotel_phone}">{$v.hotel_phone}<i>联系商家</i></a></li>
-
     </ul>
 </section>
 <!-- 地图 end -->
@@ -66,10 +65,10 @@
         <li><a href="__PUBLIC__/index.php/home/hotel/hotel_package?pid={$v.id}">{$v.package_name}<span>¥{$v.package_price}/桌</span></a></li>
         <?php }?>
     </ul>
-
+</section>
     <div class="more"><a href="__PUBLIC__/index.php/home/hotel/hotel_package?hotel_id={$arr['hotel_id']}">查看全部{$arr['number']}个菜单</a></div>
 
-</section>
+
 <!-- 婚宴菜单 end -->
 
 <!--<section id="pingLun" class="items">-->
@@ -96,17 +95,14 @@
     <ul>
         <!--<li class="online"><i>在线咨询</i></li>-->
         <li class="contact">
-
             <a href="tel:{$list[0]['hotel_phone']} ">
-                <i>联系商家</i>
+                <i>拨打电话</i>
             </a>
-
         </li>
         <li class="contact">
             <a href="https://www.sobot.com/chat/h5/index.html?sysNum=107fee5c8e2a44edaedfee62fc3e66d1&source=1"> <i>在线客服</i></a>
         </li>
         <li class="dangqi dqBtn">预约档期</li>
-
         <!--<a href=""><li class="yuyue">预约看店</li></a>-->
     </ul>
 </aside>
@@ -276,6 +272,5 @@
     </div>
 </section>
 <!-- 档期查询弹层 end -->
-
 </body>
 </html>

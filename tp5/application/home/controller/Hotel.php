@@ -36,11 +36,10 @@ class Hotel extends Controller{
         }else{
             return view('HunYan_List',['list'=>$list,'pagesum'=>$pageSum,'page'=>$page]);
         }
-
     }
     //酒店详细信息
     public function hotel_xq(){
-        $id=$_GET['id'];
+        $id=intval($_GET['id']);
         $list =Db::table('hotel')->where("id=$id")->select();
         $arr =Db::table('package')->where("hotel_id=$id")->select();
         $number =Db::table('package')->where("hotel_id=$id")->count();
@@ -53,13 +52,13 @@ class Hotel extends Controller{
     //酒店菜单
     public function hotel_package(){
         if(isset($_GET['pid'])){
-            $pid=$_GET['pid'];
+            $pid=intval($_GET['pid']);
             $list =Db::table('package')->join('hotel','hotel.id = package.hotel_id ')->where("package.id=$pid")->select();
             $this->assign('list', $list);
             return view('package');
         }else{
-            $hotel_id=$_GET['hotel_id'];
-//            $list =Db::table('package')->where("hotel_id=$hotel_id")->select();
+//            $hotel_id=$_GET['hotel_id'];
+            $hotel_id=intval($_GET['hotel_id']);
             $list =Db::table('package')->join('hotel','hotel.id = package.hotel_id ')->where("package.hotel_id=$hotel_id")->select();
             $this->assign('list', $list);
             return view('package');

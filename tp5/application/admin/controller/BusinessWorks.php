@@ -7,7 +7,7 @@ use app\admin\controller\Entrance;
 class BusinessWorks extends Entrance{
 	public function index(){
 		$Db=Db::table('ph_business_works');
-		$data=$Db->join('ph_business','ph_business_works.pbusinessId=ph_business.pbusinessId')->join('ph_business_type','ph_business_works.ptypeId=ph_business_type.ptypeId')->select();
+		$data=$Db->join('ph_business','ph_business_works.pbusinessId=ph_business.pbusinessId')->select();
 		return view('index',['data'=>$data]);
 	}
 
@@ -15,8 +15,7 @@ class BusinessWorks extends Entrance{
 	public function worksAdd(){
 		$Db=Db::table('ph_business');
 		$data=$Db->select();
-		$type=Db::table('ph_business_type')->select();
-		return view('pworksadd',['data'=>$data,'type'=>$type]);
+		return view('pworksadd',['data'=>$data]);
 	}
 
 	//接受添加的参数
@@ -60,8 +59,7 @@ class BusinessWorks extends Entrance{
 		$info=$Db->where('pworksId',"$id")->find();
 		$Db=Db::table('ph_business');
 		$data=$Db->select();
-		$type=Db::table('ph_business_type')->select();
-		return view('pworksupdate',['info'=>$info,'data'=>$data,'type'=>$type]);
+		return view('pworksupdate',['info'=>$info,'data'=>$data]);
 	}
 
 	//接受修改的参数

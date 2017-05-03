@@ -12,7 +12,7 @@ class BusinessPrice extends Controller{
 		// $this->assign('page', $page);// 渲染模板输出
 		// return $this->fetch();
 		$Db=Db::table('ph_business_price');
-		$data=$Db->join('ph_business','ph_business_price.pbusinessId=ph_business.pbusinessId')->join('ph_business_type','ph_business_price.ptypeId=ph_business_type.ptypeId')->order('ppriceId')->paginate(5);
+		$data=$Db->join('ph_business','ph_business_price.pbusinessId=ph_business.pbusinessId')->order('ppriceId')->paginate(5);
 		// $de=$data->render();
 		// print_r($de);die;
 		return view('index',['data'=>$data]);
@@ -22,8 +22,7 @@ class BusinessPrice extends Controller{
 	public function priceAdd(){
 		$Db=Db::table('ph_business');
 		$data=$Db->select();
-		$type=Db::table('ph_business_type')->select();
-		return view('ppriceadd',['data'=>$data,'type'=>$type]);
+		return view('ppriceadd',['data'=>$data]);
 	}
 
 	//接受添加的参数
@@ -47,8 +46,7 @@ class BusinessPrice extends Controller{
 		$info=$Db->where('ppriceId',"$id")->find();
 		$Db=Db::table('ph_business');
 		$data=$Db->select();
-		$type=Db::table('ph_business_type')->select();
-		return view('ppriceupdate',['info'=>$info,'data'=>$data,'type'=>$type]);
+		return view('ppriceupdate',['info'=>$info,'data'=>$data]);
 	}
 
 	//接受修改的参数

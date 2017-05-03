@@ -8,13 +8,14 @@ use app\admin\controller\Entrance;
 class Business extends Entrance{
 	public function index(){
 		$Db=Db::table('ph_business');
-		$data=$Db->select();
+		$data=$Db->join('ph_business_type','ph_business.ptypeId=ph_business_type.ptypeId')->order('pbusinessId')->paginate(5);
 		return view('index',['data'=>$data]);
 	}
 
 	//添加
 	public function businessAdd(){
-		return view('businessadd');
+		$type=Db::table('ph_business_type')->select();
+		return view('businessadd',['type'=>$type]);
 	}
 
 	//接受添加的参数
@@ -37,7 +38,8 @@ class Business extends Entrance{
 		$id =$_GET['id'];
 		$Db=Db::table('ph_business');
 		$info=$Db->where('pbusinessId',"$id")->find();
-		return view('businessupdate',['info'=>$info]);
+		$type=Db::table('ph_business_type')->select();
+		return view('businessupdate',['info'=>$info,'type'=>$type]);
 	}
 
 	//接受修改的参数

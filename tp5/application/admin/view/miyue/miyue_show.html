@@ -48,9 +48,13 @@
 			<tr>
 				<td><?= $val['address']?></td>
 				<td><?= $val['url']?></td>
-				<td><?= $val['hotel_name']?></td>
-				<td><?= $val['price']?></td>
+				<td>
+					<a href="__PUBLIC__/index.php/admin/miyueroom/show?id={$val.miyue_id}">
+						<?= $val['hotel_name']?>
+					</a>
+				</td>
 				<td><?= $val['hotel_level']?></td>
+				<td><?= $val['price']?></td>
 				<td><?= $val['youhui']?></td>
 				<td><?= $val['tel']?></td>
 				<td>
@@ -66,6 +70,9 @@
 					<a href="__PUBLIC__/index.php/admin/miyue/reserve?id={$val.miyue_id}">预定须知</a>
 				</td>
 				<td>
+					<a href="__PUBLIC__/index.php/admin/miyue/manage?id={$val.miyue_id}">
+						图片管理&nbsp;&nbsp;&nbsp;
+					</a>
 					<a href="__PUBLIC__/index.php/admin/miyue/miyue_update?id={$val.miyue_id}">
 						<img class="operation" src="__PUBLIC__/img/update.png">
 					</a>
